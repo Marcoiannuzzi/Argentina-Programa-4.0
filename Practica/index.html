@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Practica</title>
+</head>
+<body>
+    <main class="container">
+        <h3>Seleccionar Color</h3>
+        <div class="cuadrado" id="cuadrado"></div>
+        <label for="input"><strong> Color :</strong></label>
+        <input type="text" id="input">
+        <button onclick="cambiarColor()">click</button>
+        <br>
+        <hr>
+        <h3>Formulario en tabla</h3>
+        <input type="text" placeholder="nombre" id="nombre">
+        <input type="text" placeholder="apellido" id="apellido">
+        <input type="text" placeholder="telefono" id="telefono">
+        <input type="text" placeholder="dni" id="dni">
+        <select name="sexo" id="sexo">
+            <optgroup>
+                <option value="masculino">Hombre</option>
+                <option value="femenino">Mujer</option>
+            </optgroup>
+        </select>
+
+
+        <button onclick="fromfunction()">click</button>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Telefono</td>
+                    <td>Dni</td>
+                    <td>Sexo</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="tnombre"></td>
+                    <td id="tapellido"></td>
+                    <td id="ttelefono"></td>
+                    <td id="tdni"></td>
+                    <td id="tsexo"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

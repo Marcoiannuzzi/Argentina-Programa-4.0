@@ -1,0 +1,20 @@
+.cuadrado{
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+}
+
+.container {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
