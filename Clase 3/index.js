@@ -80,20 +80,25 @@
 
 // convertidorACelcius(fahrenheit);
 
-//Ejercicio 6
+// //Ejercicio 6
 
-let num = 5;
+// let num = 5;
 
-function factorial (num){
-    if (typeof(num) != typeof(1)){
-        console.log("el valor ingresao es incorrecto");
-    }
-    else{
+// function factorial (n){
+//     if (typeof(num) != "number"){
+//         console.log("el valor ingresao es incorrecto");
+//     }
+//     else{
+//         if (n === 0 || n === 1) {
+//           return 1;
+//         } else {
+//           return n * factorial(n - 1);
+//         }
+//     }
 
-    }
-}
+// }
 
-//factorial(num);
+// console.log(factorial(num));
 
 //// Ejercicio 7
 
