@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Clase 5</title>
+</head>
+<body>
+    <div>
+        <h3>Ejercicio 8</h3>
+        <br>
+        <input type="text" id="input8">
+        <h4>Resultado Ejercicio 8</h4>
+        <p id="resultado"></p>
+        <h4>Resultado Ejercicio 8 array</h4>
+        <p id="resultadoArray"></p>
+
+        <hr>
+
+        <h3>Ejercicio 9 y 10 Conversor</h3>
+
+        <h3>Convertidor de moneda</h3>
+        <label for="dolar">Dólares:</label>
+        <input type="number" id="dolar" placeholder="Ingrese el valor en dólares">
+
+        <label for="peso">Pesos:</label>
+        <input type="number" id="peso" placeholder="Ingrese el valor en pesos">
+
+        <button onclick="convertirDolares()">Convertir a pesos</button>
+        <button onclick="convertirPesos()">Convertir a dólares</button>
+
+        <hr>
+
+        <h3>Ejercicio 11 Grados</h3>
+
+        <h3>Convertidor de Grados</h3>
+        <label for="centigrados">Centigrados:</label>
+        <input type="number" id="centigrados" placeholder="centrigrados">
+
+        <label for="farenheit">Farenheit:</label>
+        <input type="number" id="farenheit" placeholder="Farenheit">
+
+        <button onclick="convertirCentigrados()">Convertir a Centigrados</button>
+        <button onclick="convertirFarenheit()">Convertir a Farenheit</button>
+
+        <hr>
+        <h3>Ejercicio 12</h3>
+        <h3>Formulario Caja de Carton</h3>
+
+        <label for="nombre">Nombre del Cliente: </label>
+        <input type="text" id="nombre">
+        <br>
+        <label for="material">Material de la Caja: </label>
+        <select name="material" id="material">s
+            <option value="madera">Madera</option>
+            <option value="Carton">Carton</option>
+        </select>
+        <br>
+        <p>Seleccione el tamaño:</p>
+        <label for="diminuta"><input type="radio" name="dimension" id="diminuta" value="diminuta">Diminuta</label>
+        <label for="mediana"><input type="radio" name="dimension" id="mediana" value="mediana">Mediana</label>
+        <label for="grande"><input type="radio" name="dimension" id="grande" value="grande">Grande</label>
+        
+        <p>Comentarios: </p>
+        <textarea name="comentario" id="comentario" cols="30" rows="3"></textarea>
+        <br>
+        <button onclick="formularioCaja()">Enviar</button>
+        <br><br>
+        <textarea name="resumen" id="resumen" cols="50" rows="1"></textarea>
+        <br><br>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
