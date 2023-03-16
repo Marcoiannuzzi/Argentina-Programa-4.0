@@ -70,6 +70,24 @@
         <textarea name="resumen" id="resumen" cols="50" rows="1"></textarea>
         <br><br>
 
+        <label for="numeroSecreto">Ingresa un numero del 0 al 5</label>
+        <input type="number" id="secreto">
+        <button onclick="numeroSecreto()">Guardar</button>
+
+        <label for="adivinarNum">Ingresa un numero</label>
+        <input type="number" id="adivinarNum">
+        <button onclick="adivinar()">Adivinar</button>
+        
+        <hr>
+
+        <label for="persona">Ingresa un Nombre: </label>
+        <input type="text" name="persona" id="persona">
+
+        <button onclick="agregar()">agregar</button>
+
+        <ul id="lista">
+            
+        </ul>
     </div>
 
     <script src="index.js"></script>

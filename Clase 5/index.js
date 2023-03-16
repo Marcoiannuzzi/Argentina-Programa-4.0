@@ -80,23 +80,63 @@
 
 //   }
 
-//Ejercicio 12
-const formularioCaja = () => {
-  let nombre = document.getElementById("nombre").value;
-  let material = document.getElementById("material").value;
+// //Ejercicio 12
+// const formularioCaja = () => {
+//   let nombre = document.getElementById("nombre").value;
+//   let material = document.getElementById("material").value;
 
-  const radioGroup = document.getElementsByName("dimension");
-  let dimensionSeleccionada;
-  radioGroup.forEach(radio => {
-    if (radio.checked) {
-      dimensionSeleccionada = radio.value;
-    }
-  });
+//   const radioGroup = document.getElementsByName("dimension");
+//   let dimensionSeleccionada;
+//   radioGroup.forEach(radio => {
+//     if (radio.checked) {
+//       dimensionSeleccionada = radio.value;
+//     }
+//   });
 
-  let comentario = document.getElementById("comentario").value;
+//   let comentario = document.getElementById("comentario").value;
 
-  document.getElementById("resumen").innerHTML = `Caja para ${nombre} de ${material} tamaño ${dimensionSeleccionada} y ${comentario}`;
+//   document.getElementById("resumen").innerHTML = `Caja para ${nombre} de ${material} tamaño ${dimensionSeleccionada} y ${comentario}`;
+// }
+
+//Ejercicio 13
+
+let secreto;
+let adivinarNum;
+let cont = 3;
+
+const numeroSecreto = () => {
+  secreto = document.getElementById("secreto").value;
+  if(secreto >5 && secreto <= 0){
+    alert("el numero debe estar entre 0 y 5, vuelve a intentarlo")
+    secreto = 0;
+  }
+  document.getElementById("secreto").value = 0;
 }
 
+const adivinar = () => {
+  adivinarNum = document.getElementById("adivinarNum").value;
+  if(cont <= 0){
+    alert("perdiste!!")
+  }
+  if (secreto!=adivinarNum){
+    cont--
+    alert(`te quedan ${cont} intentos`);
+  }
+  else if(secreto == adivinarNum){
+    alert(`Ganaste!!`)
+  }
+}
+
+//Ejercicio 14
+
+const agregar = () => {
+  let persona = document.getElementById("persona").value;
+  let lista = document.getElementById("lista");
+
+  let nuevoElemento = document.createElement("li"); 
+  nuevoElemento.innerText = persona; 
+  lista.appendChild(nuevoElemento); 
+  persona.value = "";
+}
 
 
