@@ -1,0 +1,69 @@
+.body{
+    margin: 0;
+    padding: 0;
+    width: 95vw;
+    height: 100vh;
+    background-image: url("img/ondas.svg");
+    background-color:#22193F;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Nunito', sans-serif;
+}
+
+.imgContainer{
+    background-image: url("./img/img-login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+}
+
+.imagenAdmin{
+    width: 215px;
+}
+
+.loginForm{
+    background-color: white;
+    width: 450px;
+    height: 450px;
+}
+
+.loginTitulo{
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.input{
+    font-family: 'Nunito', sans-serif;
+    border:1px solid #C4C4C4;
+    border-radius: 20px;
+    width: 90%;
+    font-size: 16px;
+}
+
+.inputSpan{
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    color: #E21982;
+}
+
+.link{
+    color: #E21982;
+    font-weight: bold;
+}
+
+.boton{
+    border-radius: 20px;
+    font-weight: bold;
+    width: 80%;
+    font-size: 16;
+    background-color: #E21982;
+    color: #C4C4C4;
+
+}
+
+.pregunta{
+    width: 100%;
+}
+
