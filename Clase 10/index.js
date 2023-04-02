@@ -132,14 +132,102 @@
 //   };
   
 // Ejercicio 10. Crear dos párrafos en el body de una página. Capturar el evento click solo del primero utilizando la librería jQuery.
+$(function(){
+
+})
+
+$(".p1").on("click", hola = () => $(".p1").text("Se capturó el evento del Parrafo 1"));
+
+//Ejercicio 11. 
+
+$(".f1").on("click", cambiaColor = () => {
+    $(".f1").css("background-color","red")
+});
+
+// Ejercicio 12. Mostrar una lista no ordenada con 4 elementos 'li'. Ocultar el que se presiona. Para
+// ocultar un elemento jQuery tiene un método llamado hide().
+
+$(".li1").on("click", desaparecer = () =>{
+    $(".li1").hide();
+});
+
+$(".li2").on("click", desaparecer = () =>{
+    $(".li2").hide();
+});
+
+$(".li3").on("click", desaparecer = () =>{
+    $(".li3").hide();
+});
+
+$(".li4").on("click", desaparecer = () =>{
+    $(".li4").hide();
+});
+
+// Ejercicio 13. Confeccionar una página que muestre dos tablas con tres filas cada una. Cambiar el color
+// de fondo de cada fila de la primera tabla cuando sea presionada con el mouse
+
+$(".r1").on("click", cambiarColor = () => {
+    $(".r1").css("background-color","yellow")
+});
+
+$(".r2").on("click", cambiarColor = () => {
+    $(".r2").css("background-color","yellow")
+});
+
+$(".r3").on("click", cambiarColor = () => {
+    $(".r3").css("background-color","yellow")
+});
+
+// Ejercicio  14. Disponer un título de noticia y seguidamente la descripción de la noticia (encerrarlo en un div con un nombre de clase), repetir esto para tres noticias. Agregar tres botones que rescaten el nombre de la clase para la descripción de la noticia y cambien su tamaño de fuente.
+
+$(".b1").on("click", cambiarTamanio = () => {
+    $(".n1 p").css("font-size","30px");
+})
+
+$(".b2").on("click", cambiarTamanio = () => {
+    $(".n2 p").css("font-size","30px");
+})
+
+$(".b3").on("click", cambiarTamanio = () => {
+    $(".n3 p").css("font-size","30px");
+})
 
 
+// Ejercicio 15. Crear una página que contenga dos tablas de 3 filas y 3 columnas cada una con un texto en cada casillero. Luego al presionar un botón cambiar por la cadena "-" solo el contenido de la primera tabla, dejando intacto el de la segunda.
 
+$(".ej15").on("click", cambiarTexto = () => {
+    $(".tabla1 tr td").text("-");
+})
 
+// Ejercicio 16. Definir un hipervínculo con la propiedad href con cadena vacía. Luego disponer tres botones que permitan fijar distintos hipervínculos para la propiedad href. Además
+// actualizar el texto del hipervínculo.
 
+$(".bt1").on("click", cambiarAtributo = () => {
+    $(".linkA").attr("href","https://www.google.com/");
+});
 
+$(".bt2").on("click", cambiarAtributo = () => {
+    $(".linkA").attr("href","https://www.instagram.com/");
+});
 
+$(".bt3").on("click", cambiarAtributo = () => {
+    $(".linkA").attr("href","https://www.facebook.com/");
+});
 
+// Ejercicio 17. Confeccionar una página que contenga algunas palabras con el elemento 'strong', luego
+// cuando sean presionadas ocultarlas.
+
+$(".ocultar1").on("click", ocultar = () => {
+    $(".ocultar1").hide();
+});
+
+$(".ocultar2").on("click", ocultar = () => {
+    $(".ocultar2").hide();
+});
+
+$(".ocultar3").on("click", ocultar = () => {
+    $(".ocultar3").hide();
+});
 
 
 
