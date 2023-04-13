@@ -2,9 +2,151 @@
     --rosa: #E21982;  
     --azulOscuro: #22193F;
     --gris: #E8E8E8;
-     
+    --letranunito: 'Nunito', sans-serif;
+    --letraOpens: 'Open Sans', sans-serif;
 }
 
 li{
     list-style: none;
 }
+
+.titulo{
+    font-family: var(--nunitoBlack);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.bajadaBanner{
+    font-family: var(--letraOpens);
+    font-size: 22px;
+}
+
+.tituloSecundario{
+    font-family: var(--letraOpens);
+    font-weight: 200;
+    font-size: 28px;
+}
+
+.textoGeneral{
+    font-family: var(--letranunito);
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.enlaces{
+    font-family: var(--letranunito);
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.boton{
+    background-color: var(--rosa);
+    font-size: 16px;
+    font-family: var(--letranunito);
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    padding: 5px;
+    width: 115px;
+    color: white;
+}
+
+.banner1{
+    background-image: url(./imagenes/banner-principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoRosa{
+    color: var(--rosa);
+    font-size: 12px;
+}
+
+.quienesSomos{
+    background-color: var(--gris);
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buscasAyuda{
+    height: 30vh;
+}
+
+.bannerCentro{
+    background-color: var(--rosa);
+    color: white;
+    padding: 15;
+}
+
+.boton2{
+    background-color: var(--rosa);
+    font-size: 13px;
+    font-family: var(--letranunito);
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    width: 130px;
+    color: white;
+    border: 1px solid white;
+}
+
+.bannerFinal{
+    background-image: url(./imagenes/banner-secundario.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+select{
+    width: 450px;
+    padding: 6px;
+    border-radius: 5px;
+    border-color: var(--gris);
+    font-size: 12px;
+    font-family: var(--letraOpens);
+}
+ .logo{
+    border-radius: 100%;
+ }
+
+
+/* Tamaños de textos:
+○ Título banner principal: 40px
+○ Bajada banner principal: 22px
+○ Títulos secundarios: 28px
+○ Pre Títulos: 12px
+○ Texto general: 16px
+○ Título “Si brindas ayuda y te interesa sumarte”: 23px
+○ Botones: 16px
+○ Footer: 14px
+○ Copyright: 12px 
+
+Títulos: Nunito Black
+○ Enlaces y botones: Nunito Bold
+○ Pre – Títulos: Nunito Extra Light
+○ Texto general: Open Sans Regular
+○ Título de pregunta en FAQS: Open Sans Bold
+
+-Utilizar h1, h2 y h3 para títulos según corresponda
+-Respetar grilla de bootstrap (ver Ejercicio2-bootstrap-grilla.jpg)
+-Se proveen imágenes dentro de la carpeta images
+-Se proveen textos en archivo que se llama textos.txt
+*/
